@@ -18,3 +18,25 @@ This project contains the tools needed to reconstruct single sample networks usi
 
 
 - ``CoDiNA.R`` Uses the CoDiNA R package to join all single sample networks, and search for patient specific edges. 
+
+## Hands on
+
+1. Follow the instructions in https://github.com/josemaz/aracne-multicore to install ARACNe-multicore.
+
+2.  Clone this repository, and move all files and expression matrix of interest into the  ``launch`` directory.
+
+3.  Run ``lioness.sh`` with the corresponding arguments:
+- first argument must be the expression matrix of interest that meets the above mentioned criteria.
+- second argument is the desired name of the output directory that will store all sample specific and aggregate networks.
+```bash
+bash lioness.sh expression_matrix.tsv outputdir
+```
+#### Optional
+
+4. Run Co-expression Differential Network Analysis (CoDiNA) R script to merge all networks into a single data frame and look for patient specific edges. 
+```bash
+Rscript CoDiNA.R outputdir expression_matrix.tsv
+```
+CoDiNA output is stored as ``outputdir-CoDiNA-diffnet.tsv``.
+
+
