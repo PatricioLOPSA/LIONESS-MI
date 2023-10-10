@@ -14,7 +14,7 @@ rownames(a_min_q) <- colnames(a_min_q)
 rownames(alpha_net) <- colnames(alpha_net)
 
 #Lioness equation
-SS <- nr_samples * (alpha_net - a_min_q) + a_min_q
+SS <-round( nr_samples * (alpha_net - a_min_q) + a_min_q,3)
 
 elify <- function(net){
     require(reshape2)
