@@ -15,7 +15,7 @@ In general, our work can be divided into 4 main methodological aspects.
 
 - ``RNASEQ_CLEAN.R`` Takes output RDS file from download script and applies cleaning and wrangling functions. Produces a cleaned .RDS file.
 
-- ``NORMALIZATION.R`` Takes output clean .RDS, and applies normalization functions. outputs summarized experiment with transformed expression data and PCA plots of normalized v.s. unnormalized samples.
+- ``NORMALIZATION.R`` Takes output clean .RDS, and applies normalization functions. Outputs summarized experiment with transformed expression data and PCA plots of normalized v.s. unnormalized samples.
 
 - ``Survival_Prepare.R`` Uses survival data from primary tumor samples in the sumarized experiment and filters properly anotated samples for downstream analyses.
 
@@ -31,7 +31,7 @@ This section contains the tools needed to reconstruct single sample networks usi
 
 - ``lioness_aracne.sh`` Calls all the above mentioned scripts to calculate all single sample networks using ARACNe2.
 
--``filter_nets.R`` Script for filtering fully-connected SSNs to a specified number of edges according to their strongest weights i.e. LIONESS Score.
+- ``filter_nets.R`` Script for filtering fully-connected SSNs to a specified number of edges according to their strongest weights i.e. LIONESS Score.
 
 ### Unsupervised graph-clustering based on SSN similarity
 - ``SSnet_pairwise_similarity.R`` Script for computing the intersection of edges between SSNs at a fixed network size. First argument is the directory where all SSNs are found. Second argument is the desired output.tsv file name
