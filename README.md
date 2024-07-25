@@ -1,8 +1,8 @@
 # Patient-Specific Gene Co-Expression Networks Reveal Novel Subtypes and Predictive Biomarkers in Lung Adenocarcinoma
 
-###Overview
+### Overview
 In this work, we inferred Single-Sample Gene Co-expression Networks (SSNs) from RNA-Seq Data obtained from the LUAD-TCGA cohort using Mutual Information (MI) and LIONESS (Linear Interpolation to Obtain Network Estimates for Single Samples) as the SSN reconstruction method.  
-![Methods summary](images/Methods_overview.png)
+![Methods summary](images/Method_overview.png)
 
 In general, our work can be divided into 4 main methodological aspects.
 1. Data download, pre-processing, cleaning and normalization.
